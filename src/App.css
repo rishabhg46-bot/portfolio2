@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.education-card {
+  width: 280px;
+  min-height: 280px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fixed navbar offset */
+
+#about,
+#skills,
+#projects,
+#education{
+  scroll-margin-top: 40px;
+}
+#contact{
+    scroll-margin-top: -60px;
+}
+#home{
+    scroll-margin-top: 150px;
+}
